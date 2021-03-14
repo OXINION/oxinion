@@ -44,7 +44,39 @@ export const MobileIcon = styled.div`
   font-size: 1.8rem;
   cursor: pointer;
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 770px) {
     display: none;
   }
+`;
+
+export const NavMenu = styled.ul`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+`;
+
+export const NavItem = styled.li`
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+
+  @media screen and (min-width: 770px) {
+    &:hover {
+      border-bottom: 2px solid #4b59f7;
+    }
+  }
+`;
+
+export const NavLinks = styled(Link)`
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.7rem;
+  text-decoration: none;
+  color: black;
+`;
+
+export const NavUser = styled.div`
+  display: flex;
+  margin: 0.3rem;
 `;

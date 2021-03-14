@@ -1,19 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Nav,
   NavbarContainer,
   NavLogo,
   NavIcon,
-  MobileIcon,
+  NavMenu,
+  NavItem,
+  NavLinks,
+  NavUser,
 } from "./Navbar.elements";
-import { FaBars, FaTimes } from "react-icons/fa";
 import oxinionLogo from "../images/oxinion_logo.png";
+import { RiUserLocationLine } from "react-icons/ri";
 
 const Navbar = () => {
-  const [click, setClick] = useState(false);
-
-  const handleClick = () => setClick(!click);
-
   return (
     <>
       <Nav>
@@ -21,9 +20,17 @@ const Navbar = () => {
           <NavLogo to="/">
             <NavIcon src={oxinionLogo} />
           </NavLogo>
-          <MobileIcon onClick={handleClick}>
-            {click ? <FaTimes /> : <FaBars />}
-          </MobileIcon>
+          <NavMenu>
+            <NavItem>
+              <NavLinks>Ride</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks>Travel</NavLinks>
+            </NavItem>
+            <NavUser>
+              <RiUserLocationLine />
+            </NavUser>
+          </NavMenu>
         </NavbarContainer>
       </Nav>
     </>
