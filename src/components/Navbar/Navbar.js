@@ -8,9 +8,11 @@ import {
   NavItem,
   NavLinks,
   NavUser,
+  NavBtnLink,
 } from "./Navbar.elements";
 import oxinionLogo from "../images/oxinion_logo.png";
 import { RiUserLocationLine } from "react-icons/ri";
+import { Button } from "../../globalStyles";
 
 const Navbar = () => {
   return (
@@ -30,6 +32,9 @@ const Navbar = () => {
             <NavUser>
               <RiUserLocationLine />
             </NavUser>
+            <NavBtnLink to="/sign-up">
+              <Button primary>Sign Up</Button>
+            </NavBtnLink>
           </NavMenu>
         </NavbarContainer>
       </Nav>

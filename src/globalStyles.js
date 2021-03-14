@@ -17,10 +17,21 @@ export const Container = styled.div`
   padding-right: 20px;
   padding-left: 20px;
 
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 600px) {
     padding-right: 30px;
     padding-left: 30px;
   }
+`;
+
+export const Button = styled.button`
+  border-radius: 1.3rem;
+  background: ${({ primary }) => (primary ? "#000" : "#f4f4f4")};
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem;
+  text-decoration: none;
 `;
 
 export default GlobalStyle;
