@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { Container } from "../../globalStyles";
 
 export const Nav = styled.nav`
-  background: red;
-  height: 80px;
+  background: #fff;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,6 +12,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 999;
+  border-bottom: 1px solid rgba(181, 180, 186, 0.25);
 `;
 
 export const NavbarContainer = styled(Container)`
