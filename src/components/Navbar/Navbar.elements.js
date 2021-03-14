@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { Container } from "../../globalStyles";
 
 export const Nav = styled.nav`
@@ -23,11 +23,11 @@ export const NavbarContainer = styled(Container)`
 `;
 
 export const NavLogo = styled(Link)`
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  text-decoration: none;
+  justify-content: flex-start;
   cursor: pointer;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
 `;
 
 export const NavIcon = styled.img`
@@ -68,7 +68,7 @@ export const NavItem = styled.li`
   }
 `;
 
-export const NavLinks = styled(Link)`
+export const NavLinks = styled.a`
   display: flex;
   align-items: center;
   padding: 0.5rem 0.7rem;
