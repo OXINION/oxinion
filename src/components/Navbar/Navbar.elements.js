@@ -78,13 +78,14 @@ export const NavLinks = styled.a`
   font-weight: bold;
 
   @media screen and (min-width: 600px) {
-    margin-right: 1rem;
+    margin: 0.7rem;
   }
 `;
 
 export const NavUser = styled.div`
   display: flex;
   margin: 0.3rem;
+  cursor: pointer;
 `;
 
 export const NavBtnLink = styled(Link)`
