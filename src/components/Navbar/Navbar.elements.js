@@ -76,6 +76,10 @@ export const NavLinks = styled(Link)`
   color: black;
   font-size: 0.9rem;
   font-weight: bold;
+
+  @media screen and (min-width: 600px) {
+    margin-right: 1rem;
+  }
 `;
 
 export const NavUser = styled.div`
@@ -89,6 +93,6 @@ export const NavBtnLink = styled(Link)`
 
   @media screen and (min-width: 600px) {
     display: flex;
-    margin: 0.3rem;
+    margin-left: 1.5rem;
   }
 `;
