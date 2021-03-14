@@ -1,5 +1,11 @@
+import { Navbar } from "./components";
+
 function App() {
-  return <div className="App">oxinion</div>;
+  return (
+    <div className="App">
+      <Navbar />
+    </div>
+  );
 }
 
 export default App;
