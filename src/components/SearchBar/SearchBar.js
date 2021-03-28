@@ -4,20 +4,43 @@ import {
   FormContainer,
   FormField,
   FormInput,
+  FormLabel,
+  FormInputField,
 } from "./SearchBar.elements";
+import { FaSearch, FaSearchengin, FaSearchLocation } from "react-icons/fa";
 
 const SearchBar = () => {
   return (
     <Form>
-      <FormContainer className="">
-        <FormField>Search</FormField>
-        <FormInput>
-          <input type="text" placeholder="What are you looking for?" />
-        </FormInput>
-        <FormField>Near</FormField>
-        <FormInput>
-          <input type="text" placeholder="Where would you go?" />
-        </FormInput>
+      <FormContainer className="form__container">
+        <FormField>
+          <FormInput>
+            <FormLabel>
+              <FaSearchengin size={20} />
+              Find
+            </FormLabel>
+            <FormInputField
+              className="form__input"
+              type="text"
+              placeholder="Where would you go?"
+            />
+          </FormInput>
+        </FormField>
+
+        <FormField>
+          <FormInput>
+            <FormLabel>
+              <FaSearchLocation />
+              Location
+            </FormLabel>
+            <FormInputField
+              className="form__input"
+              type="text"
+              placeholder="Where would you go?"
+            />
+          </FormInput>
+        </FormField>
+        <FaSearch size={50}/>
       </FormContainer>
     </Form>
   );
