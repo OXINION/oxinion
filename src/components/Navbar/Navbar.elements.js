@@ -19,8 +19,13 @@ export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   height: 60px;
-  width: 70vw;
+  width: 95vw;
   text-align: center;
+
+  @media screen and (min-width: 600px) {
+    width: 70vw;
+
+  }
 `;
 
 export const NavLogo = styled(Link)`
