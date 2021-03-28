@@ -10,7 +10,7 @@ import {
   NavUser,
   NavBtnLink,
 } from "./Navbar.elements";
-import oxinionLogo from "../images/oxinion_logo.png";
+import oxinionLogo from "../../assets/images/oxinion_logo.png";
 import { RiUserLocationLine } from "react-icons/ri";
 import { Button } from "../../globalStyles";
 

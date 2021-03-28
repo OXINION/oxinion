@@ -1,14 +1,15 @@
-import { Navbar } from "./components";
 import GlobalStyle from "./globalStyles";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Route, Switch } from "react-router";
+import LandingPage from "./pages/LandingPage/LandingPage";
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Switch>
+        <Route path="/search" component="" />
+        <Route path="/" component={LandingPage} />
         <GlobalStyle />
-        <Navbar />
-      </Router>
+      </Switch>
     </div>
   );
 }
