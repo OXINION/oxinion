@@ -12,6 +12,7 @@ export const FormContainer = styled.div`
   @media screen and (min-width: 600px) {
     display: flex;
     flex-direction: row;
+    margin: 1rem;
   }
 `;
 
@@ -21,6 +22,10 @@ export const FormField = styled.div`
   justify-content: center;
   width: 100%;
   margin: 0.3rem;
+
+  @media screen and (min-width: 600px) {
+    margin: 0;
+  }
 `;
 
 export const FormInput = styled.div`
@@ -31,9 +36,11 @@ export const FormInput = styled.div`
   height: 60px;
   padding: 0.5rem;
   border-radius: 50px;
-  border: 1px solid rgb(221, 221, 221) !important;
+  border: 1px solid rgb(221, 221, 221);
 
   @media screen and (min-width: 600px) {
+    border-radius: 0;
+    width: 100%;
   }
 `;
 
@@ -58,8 +65,8 @@ export const SearchButton = styled.button`
   color: white;
   background-color: #003580;
   position: absolute;
-  right: 0.2rem;
-  border-radius: 24px !important;
+  right: 0.6rem;
+  border-radius: 40px !important;
   height: 3rem;
   width: 3rem;
   max-height: 3rem;

@@ -13,32 +13,24 @@ import { FaSearch, FaSearchengin, FaSearchLocation } from "react-icons/fa";
 const SearchBar = () => {
   return (
     <Form>
-      <FormContainer className="form__container">
-        <FormField>
+      <FormContainer>
+        <FormField className="first__field">
           <FormInput>
             <FormLabel>
               <FaSearchengin size={20} />
               Find
             </FormLabel>
-            <FormInputField
-              className="form__input"
-              type="text"
-              placeholder="Where would you go?"
-            />
+            <FormInputField type="text" placeholder="Where would you go?" />
           </FormInput>
         </FormField>
 
-        <FormField>
+        <FormField className="second__field">
           <FormInput>
             <FormLabel>
               <FaSearchLocation />
               Location
             </FormLabel>
-            <FormInputField
-              className="form__input"
-              type="text"
-              placeholder="Where would you go?"
-            />
+            <FormInputField type="text" placeholder="Where would you go?" />
           </FormInput>
         </FormField>
         <SearchButton>
