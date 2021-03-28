@@ -34,13 +34,13 @@ export const FormField = styled.div`
     margin: 0;
 
     .first__input {
-      border-top-left-radius: 15px;
-      border-bottom-left-radius: 15px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
     }
 
     .second__input {
-      border-top-right-radius: 15px;
-      border-bottom-right-radius: 15px;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
     }
   }
 `;
@@ -84,7 +84,7 @@ export const SearchButton = styled.button`
   color: white;
   background-color: #003580;
   position: absolute;
-  right: 0.6rem;
+  right: 0.3rem;
   border-radius: 40px !important;
   height: 3rem;
   width: 3rem;
