@@ -7,6 +7,7 @@ export const FormContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   @media screen and (min-width: 600px) {
     display: flex;
@@ -33,7 +34,6 @@ export const FormInput = styled.div`
   border: 1px solid rgb(221, 221, 221) !important;
 
   @media screen and (min-width: 600px) {
-    
   }
 `;
 
@@ -52,4 +52,17 @@ export const FormInputField = styled.input`
   outline: none;
   padding: 0.5rem;
   background-color: #f5f5f5;
+`;
+
+export const SearchButton = styled.button`
+  color: white;
+  background-color: #003580;
+  position: absolute;
+  right: 0.2rem;
+  border-radius: 24px !important;
+  height: 3rem;
+  width: 3rem;
+  max-height: 3rem;
+  outline: none;
+  border: none;
 `;
