@@ -22,6 +22,7 @@ const Navbar = () => {
           <NavLogo to="/">
             <NavIcon src={oxinionLogo} />
           </NavLogo>
+
           <NavMenu>
             <NavItem>
               <NavLinks>Ride</NavLinks>

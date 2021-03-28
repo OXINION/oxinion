@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
-export const Form = styled.form``;
+export const Form = styled.form`
+  width: 100%;
+  @media screen and (min-width: 600px) {
+    display: flex;
+    justify-content: center;
+  }
+`;
 
 export const FormContainer = styled.div`
   display: flex;
@@ -12,6 +18,7 @@ export const FormContainer = styled.div`
   @media screen and (min-width: 600px) {
     display: flex;
     margin: 1rem;
+    width: 65%;
   }
 `;
 
@@ -76,8 +83,6 @@ export const FormInputField = styled.input`
   outline: none;
   padding: 0.5rem;
   background-color: #f5f5f5;
-  @media screen and (min-width: 600px) {
-  }
 `;
 
 export const SearchButton = styled.button`
