@@ -19,7 +19,8 @@ export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   height: 60px;
-  // ${Container}
+  width: 70vw;
+  text-align: center;
 `;
 
 export const NavLogo = styled(Link)`

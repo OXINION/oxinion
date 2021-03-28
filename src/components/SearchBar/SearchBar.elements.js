@@ -2,9 +2,16 @@ import styled from "styled-components";
 
 export const Form = styled.form`
   width: 100%;
+  height: 30vh;
+  background: url("https://images.unsplash.com/photo-1507666664345-c49223375e33?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80")
+    center center no-repeat;
+  object-fit: cover;
+  background-size: cover;
+
   @media screen and (min-width: 600px) {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 `;
 
