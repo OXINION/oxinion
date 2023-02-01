@@ -1,4 +1,3 @@
-# oxinionJS
+# oxinion
 
-
-indoor-positioning package 
+Open indoor-positioning
