@@ -12,6 +12,33 @@ const oxinion = {
       callback(peripheral.address);
     });
   },
+  startOxinionBroadcast: function (message) {
+    return new Promise((resolve, reject) => {
+      if (window.Notification && Notification.permission === "granted") {
+        navigator.geolocation.getCurrentPosition((position) => {
+          // send message and location to the server
+          resolve(
+            `Message "${message}" and location (lat: ${position.coords.latitude}, long: ${position.coords.longitude}) sent successfully.`
+          );
+        });
+      } else {
+        // request permission for notification
+        Notification.requestPermission().then((permission) => {
+          if (permission === "granted") {
+            navigator.geolocation.getCurrentPosition((position) => {
+              // send message and location to the server
+              resolve(
+                `Message "${message}" and location (lat: ${position.coords.latitude}, long: ${position.coords.longitude}) sent successfully.`
+              );
+            });
+          } else {
+            reject("Permission for notification was denied.");
+          }
+        });
+      }
+    });
+  },
+
   megaphoneForCoupon: function (couponMessage) {
     console.log(`Starting to broadcast coupon message: ${couponMessage}`);
 
