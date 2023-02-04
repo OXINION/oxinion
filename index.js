@@ -12,7 +12,7 @@ const oxinion = {
       callback(peripheral.address);
     });
   },
-  startOxinionBroadcast: function (message) {
+  nearbyMessage: function (message) {
     return new Promise((resolve, reject) => {
       if (window.Notification && Notification.permission === "granted") {
         navigator.geolocation.getCurrentPosition((position) => {
