@@ -1,6 +1,6 @@
 {
   "name": "oxinion",
-  "version": "1.3.6",
+  "version": "1.3.7",
   "description": "Open indoor-positioning.",
   "main": "index.js",
   "scripts": {
