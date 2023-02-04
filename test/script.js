@@ -1,7 +1,6 @@
-import * as oxinion from "oxinion";
+import oxinion from "oxinion";
 
 oxinion.startScan();
-
-// do something else
-
-oxinion.stopScan();
+oxinion.onDiscover((address) => {
+  console.log(`Discovered device with address: ${address}`);
+});

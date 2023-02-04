@@ -1,9 +1,17 @@
-function startScan() {
-  console.log("Scanning started.");
-}
+import noble from "noble";
 
-function stopScan() {
-  console.log("Scanning stopped.");
-}
+const oxinion = {
+  startScan: function () {
+    noble.startScanning();
+  },
+  stopScan: function () {
+    noble.stopScanning();
+  },
+  onDiscover: function (callback) {
+    noble.on("discover", (peripheral) => {
+      callback(peripheral.address);
+    });
+  },
+};
 
-export { startScan, stopScan };
+export default oxinion;

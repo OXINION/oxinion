@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/OXINION/oxinion/issues"
   },
-  "homepage": "https://github.com/OXINION/oxinion#readme"
+  "homepage": "https://github.com/OXINION/oxinion#readme",
+  "dependencies": {
+    "noble": "^1.9.1"
+  }
 }
