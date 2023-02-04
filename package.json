@@ -4,15 +4,14 @@
   "description": "Open indoor-positioning.",
   "main": "index.js",
   "scripts": {
-    "test": "node index.test.js",
     "prepublish": "npm test"
   },
   "author": "OXINION, Inc.",
   "license": "MIT",
-  "type": "module",
   "directories": {
     "test": "test"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/OXINION/oxinion.git"

@@ -1,12 +1,9 @@
-const noble = require("noble");
+function startScan() {
+  console.log("Scanning started.");
+}
 
-const oxinion = {
-  startScan: function() {
-    console.log("Scanning started.");
-  },
-  stopScan: function() {
-    console.log("Scanning stopped.");
-  }
-};
+function stopScan() {
+  console.log("Scanning stopped.");
+}
 
-export default oxinion;
+export { startScan, stopScan };
