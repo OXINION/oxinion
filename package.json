@@ -9,5 +9,21 @@
   },
   "author": "OXINION, Inc.",
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OXINION/oxinion.git"
+  },
+  "keywords": [
+    "oxinion",
+    "indoor",
+    "ble"
+  ],
+  "bugs": {
+    "url": "https://github.com/OXINION/oxinion/issues"
+  },
+  "homepage": "https://github.com/OXINION/oxinion#readme"
 }
