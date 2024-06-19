@@ -1,4 +1,3 @@
-// Import functions from individual modules in networking folder
 import {
   listenForLocationUpdates,
   triggerLocationUpdateWebhook,
@@ -8,14 +7,9 @@ import {
   setCommunicationMethod,
   getCommunicationMethod,
 } from "./communication";
-
-// Import functions from other modules
 import { startScan, stopScan, onDiscover } from "./scanner";
-
 import { nearbyMessage } from "./notification";
-
 import { megaphoneForCoupon } from "./advertising";
-
 import { scanAndPay, calculateMidPoint, createRandomPoint } from "./geometry";
 
 // Export all functions and variables
