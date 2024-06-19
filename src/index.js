@@ -1,6 +1,15 @@
 import noble from "noble";
+import io from "socket.io-client";
+
+let communicationMethod = "rest"; // Default to HTTP REST
+const socket = io("http://localhost:3000");
 
 const oxinion = {
+  // Method to set the communication method dynamically
+  setCommunicationMethod: function (method) {
+    communicationMethod = method;
+  },
+
   startScan: function () {
     noble.startScanning();
   },
@@ -93,6 +102,35 @@ const oxinion = {
     const midPointY = (y1 + y2) / 2;
 
     return [midPointX, midPointY];
+  },
+
+  createRandomPoint() {
+    const randomX = Math.random() * 100;
+    const randomY = Math.random() * 100;
+
+    return [randomX, randomY];
+  },
+
+  listenForLocationUpdates: function (callback) {
+    socket.on("locationUpdate", (data) => {
+      callback(data);
+    });
+  },
+
+  // Method to trigger a location update webhook
+  triggerLocationUpdateWebhook: function (location) {
+    const webhookUrl = "https://example.com/webhook/location-update"; // Replace with your webhook endpoint
+
+    return new Promise((resolve, reject) => {
+      axios
+        .post(webhookUrl, location)
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
   },
 };
 
