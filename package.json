@@ -1,7 +1,6 @@
 {
   "name": "oxinion",
   "version": "1.4.0",
-  "private": true, 
   "description": "",
   "main": "index.js",
   "scripts": {
