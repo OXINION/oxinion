@@ -1,14 +1,23 @@
 {
-    "name": "oxinion",
-    "version": "0.1.0",
-    "main": "dist/index.js",
-    "module": "dist/index.mjs",
-    "types": "dist/index.d.ts",
-    "scripts": {
-      "build": "tsup src/index.ts --dts --format esm,cjs --out-dir dist"
-    },
-    "dependencies": {
-        "@oxinion/core": "workspace:*"
+  "name": "oxinion",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm,cjs --out-dir dist --clean"
+  },
+  "dependencies": {
+    "@oxinion/core": "workspace:*"
   }
-  
+}

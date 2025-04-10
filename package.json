@@ -1,15 +1,31 @@
 {
   "name": "oxinion",
   "version": "1.4.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A modern SDK for location-based services",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
     "lint": "turbo run lint",
     "test": "turbo run test"
   },
-  "keywords": [],
+  "keywords": [
+    "sdk",
+    "location",
+    "geofencing"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
