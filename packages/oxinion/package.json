@@ -1,6 +1,7 @@
 {
   "name": "oxinion",
-  "version": "0.1.0",
+  "version": "1.4.1",
+  "description": "A modern SDK for location-based services",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -15,9 +16,14 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --dts --format esm,cjs --out-dir dist --clean"
+    "build": "tsup",
+    "dev": "tsup --watch"
   },
   "dependencies": {
     "@oxinion/core": "workspace:*"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false
 }
