@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "baseUrl": ".",
+      "paths": {
+        "@oxinion/core": ["packages/core/src"],
+        "@oxinion/geofencing": ["packages/geofencing/src"],
+        "@oxinion/notify": ["packages/notify/src"]
+      },
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "skipLibCheck": true
+    }
+  }
+  
